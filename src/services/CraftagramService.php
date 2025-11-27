@@ -369,7 +369,7 @@ class CraftagramService extends Component {
 
             $data = json_decode($res);
 
-            if (!isset($data['id'])) {
+            if (!isset($data->id)) {
                 Craftagram::info('getInstagramFeed:345: Failed to get data for this $mediaID. Response from Instagram: ' . $res, 'craftagram');
             }
 
